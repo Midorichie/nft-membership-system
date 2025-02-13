@@ -1,0 +1,25 @@
+[project]
+name = "nft-membership-system"
+description = "NFT-based membership system for access control"
+authors = []
+telemetry = false
+cache_dir = "./.cache"
+
+[contracts.nft-membership]
+path = "contracts/nft-membership.clar"
+clarity_version = 2
+epoch = 2.1
+
+[contracts.traits]
+path = "contracts/traits.clar"
+clarity_version = 2
+epoch = 2.1
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = true
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

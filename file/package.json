@@ -1,0 +1,24 @@
+{
+  "name": "nft-membership-system",
+  "version": "1.0.0",
+  "description": "NFT-based membership system on Stacks blockchain",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@stacks/transactions": "^6.9.0",
+    "@hirosystems/clarinet-sdk": "^2.6.0",
+    "typescript": "^5.0.4",
+    "vitest": "^1.6.1",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "vitest-environment-clarinet": "^2.1.0"
+  }
+}
